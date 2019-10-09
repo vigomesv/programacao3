@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Exercício_10 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int opcao;
+        System.out.println("Seleciona uma opção:");
+        System.out.println("1 - Somar 2 números");
+        System.out.println("2 - Raiz quadrada de um número");
+        opcao = sc.nextInt();
+        
+        if(opcao == 1){
+            int num1, num2;
+            System.out.println("Insira 2 números: ");
+            num1 = sc.nextInt();
+            num2 = sc.nextInt();
+            System.out.println("A soma dos 2 números é: "+(num1+num2));
+        }else if (opcao == 2){
+            double raiz;
+            System.out.println("Insira um número: ");
+            raiz = sc.nextDouble();
+            System.out.println("A raiz quadrada do seu número é: "+Math.sqrt(raiz));
+        }
+    }
+    
+}
