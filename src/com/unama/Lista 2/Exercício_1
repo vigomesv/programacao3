@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Exercício_1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double preco;
+        System.out.println("Informe a quantidade de folhas: ");
+        int folhas = sc.nextInt();
+        if(folhas <= 100){
+            preco = folhas*0.25;
+        }else{
+            preco = folhas*0.2;
+        }
+        
+        System.out.println("Valor a ser pago: R$"+preco);
+    }
+    
+}
