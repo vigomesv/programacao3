@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Exercício_4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        float raio, peri;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Indira o raio do circulo: ");
+        raio = sc.nextFloat();
+        peri = 2 * 3.14f * raio;
+        
+        System.out.println("Perimetro do círculo é: "+peri);
+    }
+    
+}
