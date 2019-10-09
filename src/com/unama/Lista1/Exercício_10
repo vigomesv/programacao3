@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Exercício_10 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double real, dolar;
+        System.out.println("Insira o valor do real: ");
+        real = sc.nextDouble();
+        
+        dolar = real * 0.24;
+        System.out.println("O valor do real para dólar é: $"+ dolar);
+    }
+    
+}
