@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Exercício_9 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double nota1, nota2, nota3, media;
+        
+        System.out.println("Insira suas 3 notas: ");
+        nota1 = sc.nextDouble();
+        nota2 = sc.nextDouble();
+        nota3 = sc.nextDouble();
+        
+        media = (nota1+nota2+nota3)/3;
+        
+        if(media >= 0 && media <=3){
+            System.out.println("Reprovado");
+        }else if(media >= 3 && media <= 7){
+            System.out.println("Realizar Exame");
+            System.out.println("Precisa tirar 6 para ser aprovado");
+        }else{
+            System.out.println("Aprovado");
+        }
+    }
+    
+}
