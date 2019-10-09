@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Exercício_11 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int codigo;
+        double salario;
+        
+        System.out.println("Insira seu salário e logo em seguida seu código: ");
+        salario = sc.nextDouble();
+        codigo = sc.nextInt();
+        
+        switch(codigo){
+            case 1:
+                System.out.println("Cargo Escrituário - Salário aumentado em 50% para "+ (salario*0.5 + salario));
+                break;
+            case 2:
+                System.out.println("Cargo Secretário - Salário aumentado em 35% para "+ (salario*0.35 + salario));
+                break;
+            case 3:
+                System.out.println("Cargo Caixa - Salário aumentado em 20% para "+ (salario*0.2 + salario));
+                break;
+            case 4:
+                System.out.println("Cargo Gerente - Salário aumentado em 10% para "+ (salario*0.1 + salario));
+                break;
+            case 5:
+                System.out.println("Cargo Diretor - Salário inalterado para "+ salario);
+        }
+        
+    }
+    
+}
