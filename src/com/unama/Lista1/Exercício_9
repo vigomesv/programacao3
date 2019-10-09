@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Exercício_9 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double valor, desconto;
+        System.out.println("Insira valor do produto: ");
+        valor = sc.nextDouble();
+        System.out.println("Insira desconto (Porcentagem como valor entre 0 e 1): ");
+        desconto = sc.nextDouble();
+        
+        valor = valor - (valor*desconto);
+        
+        System.out.println("O valor novo após desconto é: "+ valor);
+    }
+    
+}
