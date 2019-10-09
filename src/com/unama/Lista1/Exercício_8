@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+
+public class Exercício_8 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double salario, reajuste;
+        
+        System.out.println("Informe seu salário: ");
+        salario = sc.nextDouble();
+        System.out.println("Informe o ajuste (Porcentagem como valor entre 0 e 1): ");
+        reajuste = sc.nextDouble();
+        
+        salario = (salario*reajuste) + salario;
+        
+        System.out.println("O salário novo após reajuste é: "+salario);
+    }
+    
+}
