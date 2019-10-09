@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Exercício_5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float total, comissao;
+        System.out.println("Insira o total de vendas: ");
+        total = sc.nextFloat();
+        
+        comissao = total *0.1f;
+        
+        System.out.println("Sua comissão é de: "+comissao);
+    }
+    
+}
