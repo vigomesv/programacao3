@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Exercício_5 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double faltas, media;
+        System.out.println("Informe sua quantidade de faltas: ");
+        faltas = sc.nextDouble();
+        System.out.println("Informe sua média: ");
+        media = sc.nextDouble();
+        
+        if(faltas > 40){
+            System.out.println("Reprovado");
+        }else if(media < 6){
+            System.out.println("Ficou de recuperação");
+        }else{
+            System.out.println("Aprovado");
+        }
+    }
+    
+}
