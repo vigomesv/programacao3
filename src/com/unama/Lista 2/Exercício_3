@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Exercício_3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Informe sua idade: ");
+        int idade = sc.nextInt();
+        
+        if(idade <= 10){
+            System.out.println("Categoria infantil");
+        }else if (idade > 10 && idade <= 17){
+            System.out.println("Categoria juvenil");
+        }else{
+            System.out.println("Categoria senior");
+        }
+    }
+    
+}
