@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Exercício_4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int ang1, ang2, ang3;
+        System.out.println("Informe os 3 ângulos de um triángulo: ");
+        ang1 = sc.nextInt();
+        ang2 = sc.nextInt();
+        ang3 = sc.nextInt();
+        
+        if(ang1 > 178 || ang2 > 178 || ang3 > 178){
+            System.out.println("ângulo inválido");
+            System.exit(0);
+        }
+        
+        if(ang1+ang2+ang3 != 180){
+            System.out.println("Angulos inválidos");
+            System.exit(0);
+        }
+        
+        if(ang1 == ang2 && ang1 == ang3){
+            System.out.println("Triângulo equilátero");
+        }else if(ang1 == ang2 || ang1 == ang3){
+            System.out.println("Triângulo isósceles");
+        }else{
+            System.out.println("Triângulo escaleno");
+        }
+    }
+    
+}
