@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Exercício_2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Informe um número: ");
+        float numero = sc.nextFloat();
+        System.out.println("Seu número é: "+numero+" e seu dobro é: "+numero*2);
+    }
+    
+}
