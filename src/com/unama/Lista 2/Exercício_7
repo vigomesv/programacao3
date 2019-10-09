@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Exercício_7 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num;
+        System.out.println("Digite um número qualquer: ");
+        num = sc.nextInt();
+        
+        num = num%2;
+        
+        if(num == 1){
+            System.out.println("Seu número é impar");
+        }else{
+            System.out.println("Seu número é par");
+        }
+    }
+    
+}
