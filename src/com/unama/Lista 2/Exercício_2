@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Exercicio_2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double peca_produzida, peca_defeituosa;
+        
+        System.out.println("Quantidade de peça produzida: ");
+        peca_produzida = sc.nextDouble();
+        System.out.println("Quantidade de peça defeituosa: ");
+        peca_defeituosa = sc.nextDouble();
+        
+        if((peca_produzida/peca_defeituosa) <= 10){
+            System.out.println("Máquina precisa de manutenção");
+        }else{
+            System.out.println("Máquina em ótimo estado");
+        }
+    }
+    
+}
