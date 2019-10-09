@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Exercício_7 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double comp, altura, area;
+        System.out.println("Insira a altura da sala: ");
+        altura = sc.nextDouble();
+        System.out.println("Insira o comprimento da sala: ");
+        comp = sc.nextDouble();
+        
+        area = comp*altura;
+        
+        System.out.println("A área da sala é: "+area+"m²");
+    }
+    
+}
